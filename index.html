@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NA Steps App</title>
+    <title>Narcotics Anonymous Resources | Steps, Traditions, Recovery</title>
+    <meta name="description" content="Comprehensive resources for Narcotics Anonymous (NA) addiction recovery, the 12 Steps, 12 Traditions, and NA literature. Find drug addiction help, sobriety support, and a new way of life with the NA recovery program.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -21,15 +22,16 @@
         .step-html-content .card {
             background-color: #ffffff;
             border-radius: 0.75rem; /* 12px */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
             margin-bottom: 1.5rem; /* 24px */
             overflow: hidden; /* To contain border radius of header */
+            border: 1px solid #e5e7eb; /* Tailwind gray-200 */
         }
         .step-html-content .card-header {
-            background-color: #7dd3fc; /* Lighter sky blue for card headers */
-            color: #0c4a6e; /* Darker sky blue text */
-            padding: 1rem 1.5rem; /* 16px 24px */
-            border-bottom: 1px solid #bae6fd; /* Even lighter border */
+            background-color: #38bdf8; /* Tailwind sky-500 */
+            color: white; 
+            padding: 0.75rem 1.25rem; /* 12px 20px */
+            border-bottom: 1px solid #0ea5e9; /* Tailwind sky-600 for a slightly darker border */
         }
         .step-html-content .card-content {
             padding: 1.5rem; /* 24px */
@@ -72,12 +74,12 @@
           font-size: 1.5em; /* 24px */
           font-weight: 600;
           margin-top: 1.5em;
-          margin-bottom: 0.75em;
+          margin-bottom: 0.5em; /* Tightened margin */
           color: #0c4a6e; /* sky-800 */
         }
         .prose p {
           margin-bottom: 1em;
-          line-height: 1.6;
+          line-height: 1.65; /* Slightly increased line-height for prose */
         }
         .prose ol {
           list-style-type: decimal;
@@ -86,6 +88,16 @@
         }
         .prose ol li {
           margin-bottom: 0.5em;
+          line-height: 1.7; /* Increased line-height for list items */
+        }
+        .prose a, .step-html-content .card-content a {
+            color: #0369a1; /* sky-700 - Increased contrast */
+            text-decoration: none;
+            font-weight: 500; /* Medium weight for links */
+        }
+        .prose a:hover, .step-html-content .card-content a:hover {
+            text-decoration: underline;
+            color: #075985; /* sky-800 - Increased contrast for hover */
         }
         .line-clamp-3 {
           display: -webkit-box;
@@ -1210,132 +1222,132 @@ const step12HtmlContent = `
 const stepsData = [
   {
     id: 1,
-    title: "Step One",
+    title: "Step One of Narcotics Anonymous",
     text: "We admitted that we were powerless over our addiction, that our lives had become unmanageable.",
-    summary: "This step is about honesty and acceptance. It's the foundation of recovery, acknowledging the problem of addiction and its impact. Many find relief in this admission, as it opens the door to seeking help and starting a new way of life. It involves recognizing the unmanageability caused by addiction in various aspects of life – physical, mental, spiritual, and emotional.",
+    summary: "This step is about honesty and acceptance, the crucial start to addiction recovery. It's the foundation of the NA recovery program, acknowledging the problem of drug addiction and its impact. Many find relief in this admission, as it opens the door to seeking help and starting a new way of life. It involves recognizing the unmanageability caused by addiction in various aspects of life – physical, mental, spiritual, and emotional.",
     userContentPlaceholder: step1HtmlContent
   },
   {
     id: 2,
-    title: "Step Two",
+    title: "Step Two of Narcotics Anonymous",
     text: "We came to believe that a Power greater than ourselves could restore us to sanity.",
-    summary: "Step Two introduces hope. After admitting powerlessness, this step suggests that a force or entity greater than oneself can help restore mental balance and a healthy perspective. This Power is individually understood and can be the NA group, spiritual principles, or a traditional concept of God. Open-mindedness is key to this step.",
+    summary: "NA Step Two introduces hope into the recovery process. After admitting powerlessness over addiction, this step suggests that a Power greater than ourselves, found within the NA fellowship or as personally understood, could restore us to sanity. This Power is individually understood and can be the NA group, spiritual principles, or a traditional concept of God. Open-mindedness is key to this step in the journey of staying clean.",
     userContentPlaceholder: step2HtmlContent
   },
   {
     id: 3,
-    title: "Step Three",
+    title: "Step Three of Narcotics Anonymous",
     text: "We made a decision to turn our will and our lives over to the care of God as we understood Him.",
-    summary: "This step is about making a decision and taking action based on the belief developed in Step Two. It involves surrendering personal will and life management to the care of a chosen Higher Power. This doesn't mean becoming passive, but rather trusting in a guiding force and aligning one's actions with spiritual principles.",
+    summary: "This step is about making a decision and taking action based on the belief developed in Step Two. It involves surrendering to the NA recovery program and aligning one's actions with spiritual principles for staying clean. This doesn't mean becoming passive, but rather trusting in a guiding force for addiction recovery.",
     userContentPlaceholder: step3HtmlContent
   },
   {
     id: 4,
-    title: "Step Four",
+    title: "Step Four of Narcotics Anonymous",
     text: "We made a searching and fearless moral inventory of ourselves.",
-    summary: "Step Four is a process of self-examination. It involves honestly looking at one's character, including assets and liabilities, resentments, fears, and patterns of behavior. The goal is to gain self-understanding and identify aspects that need change. This is often a written inventory and is crucial for continued growth.",
+    summary: "NA Step Four is a vital process of self-examination in the addiction recovery journey. It involves honestly looking at one's character, including assets and liabilities, resentments, fears, and patterns of behavior, as part of the Twelve Steps. The goal is to gain self-understanding and identify aspects that need change for continued personal growth in recovery.",
     userContentPlaceholder: step4HtmlContent
   },
   {
     id: 5,
-    title: "Step Five",
+    title: "Step Five of Narcotics Anonymous",
     text: "We admitted to God, to ourselves, and to another human being the exact nature of our wrongs.",
-    summary: "Following the self-inventory, Step Five involves sharing these findings with a Higher Power, oneself, and another trusted individual (often a sponsor). This verbal admission helps to break denial, reduce isolation, and gain perspective on one's wrongs. It's a courageous step that fosters humility and self-acceptance.",
+    summary: "Following the self-inventory of Step Four, NA Step Five involves sharing these findings with a Higher Power, oneself, and another trusted individual (often a sponsor in the recovery program). This verbal admission in the NA program helps to break denial, reduce isolation, and gain perspective on one's wrongs, fostering humility and self-acceptance for lasting sobriety support.",
     userContentPlaceholder: step5HtmlContent
   },
   {
     id: 6,
-    title: "Step Six",
+    title: "Step Six of Narcotics Anonymous",
     text: "We were entirely ready to have God remove all these defects of character.",
-    summary: "Step Six is about becoming willing to let go of the character defects identified in Steps Four and Five. It's a process of preparing for change, recognizing that willpower alone isn't enough to remove these ingrained traits. Readiness comes from understanding the pain these defects cause and trusting that a Higher Power can help.",
+    summary: "Step Six of Narcotics Anonymous is about becoming willing to let go of the character defects identified in the Twelve Steps. It's a process of preparing for change, recognizing that willpower alone isn't enough to remove these ingrained traits. Readiness comes from understanding the pain these defects cause and trusting that a Higher Power, as understood in the NA fellowship, can help in the addiction recovery process.",
     userContentPlaceholder: step6HtmlContent
   },
   {
     id: 7,
-    title: "Step Seven",
+    title: "Step Seven of Narcotics Anonymous",
     text: "We humbly asked Him to remove our shortcomings.",
-    summary: "This step involves actively asking a Higher Power to remove the character defects identified. Humility is central here – recognizing limitations and the need for help. It's not about demanding instant perfection but about a sincere desire for spiritual growth and freedom from these shortcomings.",
+    summary: "This NA step involves actively asking a Higher Power to remove the character defects identified in the recovery program. Humility is central here – recognizing limitations and the need for help with addiction recovery. It's not about demanding instant perfection but about a sincere desire for spiritual growth in recovery and freedom from these shortcomings to help in staying clean.",
     userContentPlaceholder: step7HtmlContent
   },
   {
     id: 8,
-    title: "Step Eight",
+    title: "Step Eight of Narcotics Anonymous",
     text: "We made a list of all persons we had harmed and became willing to make amends to them all.",
-    summary: "Step Eight begins the process of repairing relationships and making peace with the past. It involves creating a list of individuals or institutions harmed by one's addiction and developing the willingness to make amends. This step requires honesty, courage, and a focus on taking responsibility for one's actions.",
+    summary: "Narcotics Anonymous Step Eight begins the process of repairing relationships and making peace with the past as part of your addiction recovery. It involves creating a list of individuals or institutions harmed by one's drug addiction and developing the willingness to make amends. This step requires honesty, courage, and a focus on taking responsibility for one's actions within the NA recovery program.",
     userContentPlaceholder: step8HtmlContent
   },
   {
     id: 9,
-    title: "Step Nine",
+    title: "Step Nine of Narcotics Anonymous",
     text: "We made direct amends to such people wherever possible, except when to do so would injure them or others.",
-    summary: "Step Nine is about taking action on the willingness developed in Step Eight. It involves making direct amends to those harmed, unless doing so would cause further harm. This step is crucial for clearing away guilt and remorse, fostering forgiveness (of self and others), and achieving greater personal freedom.",
+    summary: "NA Step Nine is about taking action on the willingness developed in Step Eight of the recovery program. It involves making direct amends to those harmed, unless doing so would cause further harm. This step is crucial for clearing away guilt and remorse from past drug addiction behaviors, fostering forgiveness (of self and others), and achieving greater personal freedom and sobriety support.",
     userContentPlaceholder: step9HtmlContent
   },
   {
     id: 10,
-    title: "Step Ten",
+    title: "Step Ten of Narcotics Anonymous",
     text: "We continued to take personal inventory and when we were wrong promptly admitted it.",
-    summary: "Step Ten is about maintaining recovery on a daily basis. It involves ongoing self-examination, recognizing when one is wrong or when old patterns resurface, and promptly admitting these wrongs. This practice helps to prevent the buildup of resentments and ensures continued spiritual growth.",
+    summary: "Step Ten of Narcotics Anonymous is about maintaining addiction recovery on a daily basis. It involves ongoing self-examination, recognizing when one is wrong or when old patterns resurface, and promptly admitting these wrongs. This practice, part of the Twelve Steps, helps to prevent the buildup of resentments and ensures continued spiritual growth and staying clean.",
     userContentPlaceholder: step10HtmlContent
   },
   {
     id: 11,
-    title: "Step Eleven",
+    title: "Step Eleven of Narcotics Anonymous",
     text: "We sought through prayer and meditation to improve our conscious contact with God as we understood Him, praying only for knowledge of His will for us and the power to carry that out.",
-    summary: "This step focuses on deepening one's spiritual connection through prayer and meditation. The aim is to improve conscious contact with a Higher Power, seeking guidance, knowledge of God's will, and the strength to live accordingly. It's a personal journey of spiritual growth and seeking direction.",
+    summary: "This NA step focuses on deepening one's spiritual connection through prayer and meditation, key components of the addiction recovery program. The aim is to improve conscious contact with a Higher Power, seeking guidance, knowledge of God's will, and the strength to live accordingly. It's a personal journey of spiritual growth in recovery and finding sobriety support within the Narcotics Anonymous fellowship.",
     userContentPlaceholder: step11HtmlContent
   },
   {
     id: 12,
-    title: "Step Twelve",
+    title: "Step Twelve of Narcotics Anonymous",
     text: "Having had a spiritual awakening as a result of these steps, we tried to carry this message to addicts and to practice these principles in all our affairs.",
-    summary: "Step Twelve is about giving back and living the principles of recovery. A spiritual awakening is the result of working the previous steps. This step involves carrying the message of hope and recovery to other addicts and applying the spiritual principles learned in all aspects of life. Service and living by these principles are key to maintaining one's own recovery.",
+    summary: "NA Step Twelve is about giving back and living the principles of the Narcotics Anonymous recovery program. A spiritual awakening is the result of working the previous eleven of the Twelve Steps. This step involves carrying the message of hope and addiction recovery to other addicts and applying the spiritual principles learned in all aspects of life. Service and living by these principles are key to maintaining one's own journey of staying clean and finding ongoing sobriety support.",
     userContentPlaceholder: step12HtmlContent
   }
 ];
 
 const generalPagesData = {
   whatIsNA: {
-    title: "What is the Narcotics Anonymous Program?",
+    title: "What is the Narcotics Anonymous Program? - Drug Addiction Help",
     content: `
-      <p class="mb-4">NA is a nonprofit Fellowship or society of men and women for whom drugs had become a major problem. We are recovering addicts who meet regularly to help each other stay clean. This is a program of complete abstinence from all drugs. There is only one requirement for membership, the desire to stop using. We suggest that you keep an open mind and give yourself a break. Our program is a set of principles written so simply that we can follow them in our daily lives. The most important thing about them is that they work.</p>
-      <p class="mb-4">There are no strings attached to NA. We are not affiliated with any other organizations, we have no initiation fees or dues, no pledges to sign, no promises to make to anyone. We are not connected with any political, religious or law enforcement groups, and are under no surveillance at any time. Anyone may join us, regardless of age, race, sexual identity, creed, religion or lack of religion.</p>
-      <p class="mb-4">We are not interested in what or how much you used or who your connections were, what you have done in the past, how much or how little you have, but only in what you want to do about your problem and how we can help. The newcomer is the most important person at any meeting, because we can only keep what we have by giving it away. We have learned from our group experience that those who keep coming to our meetings regularly stay clean.</p>
-      <h3 class="text-2xl font-semibold mt-6 mb-3">Why Are We Here?</h3>
+      <p class="mb-4">NA is a nonprofit Fellowship or society of men and women for whom drugs had become a major problem. We are recovering addicts who meet regularly in NA meetings to help each other stay clean and pursue addiction recovery. This is a recovery program of complete abstinence from all drugs. There is only one requirement for membership, the desire to stop using. We suggest that you keep an open mind and give yourself a break. Our program is a set of principles written so simply that we can follow them in our daily lives. The most important thing about them is that they work.</p>
+      <p class="mb-4">There are no strings attached to NA. We are not affiliated with any other organizations, we have no initiation fees or dues, no pledges to sign, no promises to make to anyone. We are not connected with any political, religious or law enforcement groups, and are under no surveillance at any time. Anyone may join us, regardless of age, race, sexual identity, creed, religion or lack of religion, to find drug addiction help.</p>
+      <p class="mb-4">We are not interested in what or how much you used or who your connections were, what you have done in the past, how much or how little you have, but only in what you want to do about your problem of addiction and how our sobriety support group can help. The newcomer is the most important person at any NA meeting, because we can only keep what we have by giving it away. We have learned from our group experience that those who keep coming to our support groups for addiction regularly stay clean.</p>
+      <h3 class="text-2xl font-semibold mt-6 mb-3">Why Are We Here? Seeking Help for Addiction</h3>
       <p class="mb-4">Before coming to the Fellowship of NA, we could not manage our own lives. We could not live and enjoy life as other people do. We had to have something different and we thought we had found it in drugs. We placed their use ahead of the welfare of our families, our wives, husbands, and our children. We had to have drugs at all costs. We did many people great harm, but most of all we harmed ourselves. Through our inability to accept personal responsibilities we were actually creating our own problems. We seemed to be incapable of facing life on its own terms.</p>
-      <p class="mb-4">Most of us realized that in our addiction we were slowly committing suicide, but addiction is such a cunning enemy of life that we had lost the power to do anything about it. Many of us ended up in jail, or sought help through medicine, religion and psychiatry. None of these methods was sufficient for us. Our disease always resurfaced or continued to progress until in desperation, we sought help from each other in Narcotics Anonymous.</p>
-      <p>After coming to NA we realized we were sick people. We suffered from a disease from which there is no known cure. It can, however, be arrested at some point, and recovery is then possible.</p>
+      <p class="mb-4">Most of us realized that in our addiction we were slowly committing suicide, but addiction is such a cunning enemy of life that we had lost the power to do anything about it. Many of us ended up in jail, or sought help through medicine, religion and psychiatry. None of these methods was sufficient for our drug addiction help. Our disease always resurfaced or continued to progress until in desperation, we sought sobriety support from each other in Narcotics Anonymous.</p>
+      <p>After coming to NA we realized we were sick people. We suffered from a disease from which there is no known cure. It can, however, be arrested at some point, and addiction recovery is then possible through the NA recovery program.</p>
     `
   },
   traditions: {
-    title: "The Twelve Traditions of NA",
+    title: "The Twelve Traditions of NA - Guiding the Fellowship",
     content: `
-      <p class="mb-4">We keep what we have only with vigilance, and just as freedom for the individual comes from the Twelve Steps, so freedom for the group springs from our Traditions. As long as the ties that bind us together are stronger than those that would tear us apart, all will be well.</p>
+      <p class="mb-4">We keep what we have only with vigilance, and just as freedom for the individual in addiction recovery comes from the Twelve Steps, so freedom for the NA group springs from our Traditions. As long as the ties that bind us together are stronger than those that would tear us apart, all will be well.</p>
       <ol class="list-decimal list-inside space-y-2 mb-4">
         <li>Our common welfare should come first; personal recovery depends on NA unity.</li>
         <li>For our group purpose there is but one ultimate authority—a loving God as He may express Himself in our group conscience. Our leaders are but trusted servants; they do not govern.</li>
-        <li>The only requirement for membership is a desire to stop using.</li>
+        <li>The only requirement for NA membership is a desire to stop using drugs.</li>
         <li>Each group should be autonomous except in matters affecting other groups or NA as a whole.</li>
-        <li>Each group has but one primary purpose—to carry the message to the addict who still suffers.</li>
-        <li>An NA group ought never endorse, finance, or lend the NA name to any related facility or outside enterprise, lest problems of money, property or prestige divert us from our primary purpose.</li>
+        <li>Each NA group has but one primary purpose—to carry the message of addiction recovery to the addict who still suffers.</li>
+        <li>An NA group ought never endorse, finance, or lend the NA name to any related facility or outside enterprise, lest problems of money, property or prestige divert us from our primary purpose of providing sobriety support.</li>
         <li>Every NA group ought to be fully self-supporting, declining outside contributions.</li>
-        <li>Narcotics Anonymous should remain forever nonprofessional, but our service centers may employ special workers.</li>
-        <li>NA, as such, ought never be organized, but we may create service boards or committees directly responsible to those they serve.</li>
+        <li>Narcotics Anonymous should remain forever nonprofessional, but our service centers may employ special workers for the NA fellowship.</li>
+        <li>NA, as such, ought never be organized, but we may create service boards or committees directly responsible to those they serve within the NA recovery program.</li>
         <li>Narcotics Anonymous has no opinion on outside issues; hence the NA name ought never be drawn into public controversy.</li>
-        <li>Our public relations policy is based on attraction rather than promotion; we need always maintain personal anonymity at the level of press, radio, and films.</li>
-        <li>Anonymity is the spiritual foundation of all our Traditions, ever reminding us to place principles before personalities.</li>
+        <li>Our public relations policy is based on attraction rather than promotion; we need always maintain personal anonymity at the level of press, radio, and films when sharing about our addiction recovery journey.</li>
+        <li>Anonymity is the spiritual foundation of all our Traditions, ever reminding us to place principles before personalities in the NA fellowship.</li>
       </ol>
-      <p>Understanding these Traditions comes slowly over a period of time. We pick up information as we talk to members and visit various groups. It usually isn't until we get involved with service that someone points out that "personal recovery depends on NA unity," and that unity depends on how well we follow our Traditions. The Twelve Traditions of NA are not negotiable. They are the guidelines that keep our Fellowship alive and free.</p>
+      <p>Understanding these Traditions comes slowly over a period of time. We pick up information as we talk to members and visit various NA meetings. It usually isn't until we get involved with service that someone points out that "personal recovery depends on NA unity," and that unity depends on how well we follow our Traditions. The Twelve Traditions of NA are not negotiable. They are the guidelines that keep our Narcotics Anonymous Fellowship alive and free, supporting addiction recovery for all members seeking help for addiction.</p>
     `
   },
   recoveryRelapse: {
-    title: "Recovery and Relapse",
+    title: "Recovery and Relapse in Narcotics Anonymous",
     content: `
-      <p class="mb-4">Many people think that recovery is simply a matter of not using drugs. They consider a relapse a sign of complete failure, and long periods of abstinence a sign of complete success. We in the recovery program of Narcotics Anonymous have found that this perception is too simplistic. After a member has had some involvement in our Fellowship, a relapse may be the jarring experience that brings about a more rigorous application of the program. By the same token we have observed some members who remain abstinent for long periods of time whose dishonesty and self-deceit still prevent them from enjoying complete recovery and acceptance within society. Complete and continuous abstinence, however, in close association and identification with others in NA groups, is still the best ground for growth.</p>
-      <p class="mb-4">Although all addicts are basically the same in kind, we do, as individuals, differ in degree of sickness and rate of recovery. There may be times when a relapse lays the groundwork for complete freedom. At other times that freedom can only be achieved by a grim and obstinate willfulness to hang on to abstinence come hell or high water until a crisis passes. An addict, who by any means can lose, even for a time, the need or desire to use, and has free choice over impulsive thinking and compulsive action, has reached a turning point that may be the decisive factor in his recovery.</p>
-      <p class="mb-4">We have seen addicts come to our Fellowship, try our program and stay clean for a period of time. Over time some addicts lost contact with other recovering addicts and eventually returned to active addiction. They forgot that it is really the first drug that starts the deadly cycle all over again. They tried to control it, to use in moderation, or to use just certain drugs. None of these control methods work for addicts.</p>
-      <p class="mb-4">Relapse is a reality. It can and does happen. Experience shows that those who do not work our program of recovery on a daily basis may relapse. We see them come back seeking recovery. Maybe they were clean for years before their relapse. If they are lucky enough to make it back, they are shaken badly. They tell us that the relapse was more horrible than earlier use. We have never seen a person who lives the Narcotics Anonymous Program relapse.</p>
-      <p>Relapses are often fatal. We have attended funerals of loved ones who died from a relapse. They died in various ways. Often we see relapsers lost for years, living in misery. Those who make it to jail or institutions may survive and perhaps have a reintroduction to NA.</p>
+      <p class="mb-4">Many people think that addiction recovery is simply a matter of not using drugs. They consider a relapse a sign of complete failure, and long periods of abstinence a sign of complete success. We in the recovery program of Narcotics Anonymous have found that this perception is too simplistic. After a member has had some involvement in our NA Fellowship, a relapse may be the jarring experience that brings about a more rigorous application of the NA recovery program. By the same token we have observed some members who remain abstinent for long periods of time whose dishonesty and self-deceit still prevent them from enjoying complete recovery and acceptance within society. Complete and continuous abstinence from drugs, however, in close association and identification with others in NA groups and NA meetings, is still the best ground for growth and staying clean.</p>
+      <p class="mb-4">Although all addicts are basically the same in kind, we do, as individuals, differ in degree of sickness and rate of addiction recovery. There may be times when a relapse lays the groundwork for complete freedom from drug addiction. At other times that freedom can only be achieved by a grim and obstinate willfulness to hang on to abstinence come hell or high water until a crisis passes. An addict, who by any means can lose, even for a time, the need or desire to use, and has free choice over impulsive thinking and compulsive action, has reached a turning point that may be the decisive factor in his recovery and ability for staying clean.</p>
+      <p class="mb-4">We have seen addicts come to our NA Fellowship, try our recovery program and stay clean for a period of time. Over time some addicts lost contact with other recovering addicts and eventually returned to active addiction. They forgot that it is really the first drug that starts the deadly cycle of drug addiction all over again. They tried to control it, to use in moderation, or to use just certain drugs. None of these control methods work for addicts seeking long-term sobriety support.</p>
+      <p class="mb-4">Relapse is a reality in the journey of staying clean. It can and does happen. Experience shows that those who do not work our Narcotics Anonymous program of recovery on a daily basis may relapse. We see them come back seeking recovery and drug addiction help. Maybe they were clean for years before their relapse. If they are lucky enough to make it back, they are shaken badly. They tell us that the relapse was more horrible than earlier use. We have never seen a person who lives the Narcotics Anonymous Program relapse and not find sobriety support upon return to NA meetings.</p>
+      <p>Relapses are often fatal. We have attended funerals of loved ones who died from a relapse. They died in various ways. Often we see relapsers lost for years, living in misery. Those who make it to jail or institutions may survive and perhaps have a reintroduction to NA and the hope of addiction recovery.</p>
     `
   }
 };
@@ -1343,33 +1355,38 @@ const generalPagesData = {
 // --- Components ---
 
 const Navbar = ({ setCurrentPage, isMobileMenuOpen, toggleMobileMenu }) => {
-  const commonLinkClasses = "px-3 py-2 rounded-md text-sm font-medium hover:bg-sky-700 hover:text-white transition-colors duration-150";
+  const commonLinkClasses = "px-3 py-2 rounded-md text-sm font-medium hover:bg-sky-700 hover:text-white transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-1 focus:ring-offset-sky-700"; // Added base focus style
   const activeLinkClasses = "bg-sky-900 text-white";
-  const inactiveLinkClasses = "text-sky-100";
+  const inactiveLinkClasses = "text-white"; // Changed from text-sky-100 for better contrast
 
-  const [isStepsOpen, setIsStepsOpen] = React.useState(false);
+  const [isStepsOpenDesktop, setIsStepsOpenDesktop] = React.useState(false);
+  const [isStepsOpenMobile, setIsStepsOpenMobile] = React.useState(false);
 
   const navLinks = [
     { name: "Home", page: "home" },
     { name: "What is NA?", page: "whatIsNA" },
-    { name: "The 12 Steps", page: "steps_dropdown", isDropdown: true },
-    { name: "The 12 Traditions", page: "traditions" },
+    { name: "The 12 Steps of NA", page: "steps_dropdown", isDropdown: true },
+    { name: "The 12 Traditions of NA", page: "traditions" },
     { name: "Recovery & Relapse", page: "recoveryRelapse" },
   ];
 
   return (
     <nav className="bg-sky-600 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <button onClick={() => setCurrentPage('home')} className="flex items-center space-x-2 text-white">
-                <svg className="h-10 w-10" fill="none" viewBox="0 0 100 100" stroke="currentColor">
+              <button 
+                onClick={() => setCurrentPage('home')} 
+                className="flex items-center space-x-2 text-white p-2 rounded-md hover:bg-sky-700 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-700"
+                aria-label="Narcotics Anonymous Recovery Resources Home"
+              >
+                <svg className="h-10 w-10" fill="none" viewBox="0 0 100 100" stroke="currentColor" aria-hidden="true">
                   <circle cx="50" cy="50" r="40" strokeWidth="5" />
                   <rect x="30" y="30" width="40" height="40" strokeWidth="5" transform="rotate(45 50 50)" />
                   <text x="50" y="55" textAnchor="middle" fontSize="20" fontWeight="bold" fill="white">NA</text>
                 </svg>
-                <span className="font-semibold text-xl tracking-tight">NA Website</span>
+                <span className="font-semibold text-xl tracking-tight">NA Recovery Resources</span>
               </button>
             </div>
           </div>
@@ -1379,21 +1396,31 @@ const Navbar = ({ setCurrentPage, isMobileMenuOpen, toggleMobileMenu }) => {
                 link.isDropdown ? (
                   <div key={link.page} className="relative">
                     <button
-                      onClick={() => setIsStepsOpen(!isStepsOpen)}
+                      id="steps-dropdown-button-desktop"
+                      onClick={() => setIsStepsOpenDesktop(!isStepsOpenDesktop)}
                       className={`${commonLinkClasses} ${window.location.hash.startsWith('#/step/') ? activeLinkClasses : inactiveLinkClasses} flex items-center`}
+                      aria-haspopup="true"
+                      aria-expanded={isStepsOpenDesktop}
+                      aria-controls="steps-menu-desktop"
                     >
                       {link.name}
-                      <svg className={`w-4 h-4 ml-1 transform transition-transform duration-200 ${isStepsOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                      <svg className={`w-4 h-4 ml-1 transform transition-transform duration-200 ${isStepsOpenDesktop ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                     </button>
-                    {isStepsOpen && (
-                      <div className="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none max-h-96 overflow-y-auto">
-                        <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    {isStepsOpenDesktop && (
+                      <div 
+                        id="steps-menu-desktop"
+                        className="absolute z-10 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none max-h-96 overflow-y-auto"
+                        role="menu" 
+                        aria-orientation="vertical" 
+                        aria-labelledby="steps-dropdown-button-desktop"
+                      >
+                        <div className="py-1" role="none">
                           {stepsData.map(step => (
                             <a
                               key={step.id}
                               href={`#/step/${step.id}`}
-                              onClick={(e) => { e.preventDefault(); setCurrentPage(`step/${step.id}`); setIsStepsOpen(false); }}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                              onClick={(e) => { e.preventDefault(); setCurrentPage(`step/${step.id}`); setIsStepsOpenDesktop(false); }}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:outline-none rounded-md"
                               role="menuitem"
                             >
                               {step.title}
@@ -1408,7 +1435,8 @@ const Navbar = ({ setCurrentPage, isMobileMenuOpen, toggleMobileMenu }) => {
                     key={link.page}
                     href={`#/${link.page}`}
                     onClick={(e) => { e.preventDefault(); setCurrentPage(link.page); }}
-                    className={`${commonLinkClasses} ${window.location.hash === `#/${link.page}` ? activeLinkClasses : inactiveLinkClasses}`}
+                    className={`${commonLinkClasses} ${window.location.hash === `#/${link.page}` || (link.page === 'home' && window.location.hash === '') ? activeLinkClasses : inactiveLinkClasses}`}
+                    aria-current={window.location.hash === `#/${link.page}` || (link.page === 'home' && window.location.hash === '') ? "page" : undefined}
                   >
                     {link.name}
                   </a>
@@ -1446,19 +1474,23 @@ const Navbar = ({ setCurrentPage, isMobileMenuOpen, toggleMobileMenu }) => {
               link.isDropdown ? (
                 <div key={link.page}>
                   <button
-                    onClick={() => setIsStepsOpen(!isStepsOpen)}
+                    id="steps-dropdown-button-mobile"
+                    onClick={() => setIsStepsOpenMobile(!isStepsOpenMobile)}
                     className={`${commonLinkClasses} ${window.location.hash.startsWith('#/step/') ? activeLinkClasses : inactiveLinkClasses} w-full text-left flex justify-between items-center`}
+                    aria-haspopup="true"
+                    aria-expanded={isStepsOpenMobile}
+                    aria-controls="steps-menu-mobile"
                   >
                     {link.name}
-                    <svg className={`w-4 h-4 ml-1 transform transition-transform duration-200 ${isStepsOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                    <svg className={`w-4 h-4 ml-1 transform transition-transform duration-200 ${isStepsOpenMobile ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                   </button>
-                  {isStepsOpen && (
-                    <div className="pl-4">
+                  {isStepsOpenMobile && (
+                    <div id="steps-menu-mobile" className="pl-4" role="menu" aria-labelledby="steps-dropdown-button-mobile">
                       {stepsData.map(step => (
                         <a
                           key={step.id}
                           href={`#/step/${step.id}`}
-                          onClick={(e) => { e.preventDefault(); setCurrentPage(`step/${step.id}`); toggleMobileMenu(); setIsStepsOpen(false); }}
+                          onClick={(e) => { e.preventDefault(); setCurrentPage(`step/${step.id}`); toggleMobileMenu(); setIsStepsOpenMobile(false); }}
                           className={`${commonLinkClasses} ${inactiveLinkClasses} block`}
                           role="menuitem"
                         >
@@ -1473,7 +1505,8 @@ const Navbar = ({ setCurrentPage, isMobileMenuOpen, toggleMobileMenu }) => {
                   key={link.page}
                   href={`#/${link.page}`}
                   onClick={(e) => { e.preventDefault(); setCurrentPage(link.page); toggleMobileMenu(); }}
-                  className={`${commonLinkClasses} ${window.location.hash === `#/${link.page}` ? activeLinkClasses : inactiveLinkClasses} block`}
+                  className={`${commonLinkClasses} ${window.location.hash === `#/${link.page}` || (link.page === 'home' && window.location.hash === '') ? activeLinkClasses : inactiveLinkClasses} block`}
+                  aria-current={window.location.hash === `#/${link.page}` || (link.page === 'home' && window.location.hash === '') ? "page" : undefined}
                 >
                   {link.name}
                 </a>
@@ -1487,46 +1520,46 @@ const Navbar = ({ setCurrentPage, isMobileMenuOpen, toggleMobileMenu }) => {
 };
 
 const HomePage = ({ setCurrentPage }) => (
-  <div className="animate-fadeIn p-6 md:p-10 bg-gradient-to-br from-sky-50 to-indigo-100 min-h-[calc(100vh-5rem)]">
+  <article className="animate-fadeIn p-6 md:p-10 bg-gradient-to-br from-sky-50 to-indigo-100 min-h-[calc(100vh-5rem)]">
     <header className="text-center mb-12">
       <h1 className="text-5xl font-bold text-sky-700 mb-4">Welcome to Narcotics Anonymous</h1>
-      <p className="text-xl text-gray-600">A Journey of Hope and Recovery</p>
+      <p className="text-xl text-gray-600">A Journey of Hope and Addiction Recovery</p>
     </header>
 
     <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
       <section className="mb-8">
         <h2 className="text-3xl font-semibold text-sky-800 mb-4">What is NA?</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          Narcotics Anonymous is a global, community-based organization with a multilingual and multicultural membership. NA was founded in 1953, and our membership growth was minimal during our initial twenty years as an organization. Since the publication of our Basic Text in 1983, the number of members and meetings has increased dramatically.
+          Narcotics Anonymous is a global, community-based organization with a multilingual and multicultural membership. NA was founded in 1953, and our membership growth was minimal during our initial twenty years as an organization. Since the publication of our Basic Text in 1983, the number of members and NA meetings has increased dramatically. We are recovering addicts who meet regularly at NA meetings to help each other stay clean. This is a recovery program of complete abstinence from all drugs.
         </p>
         <p className="text-gray-700 leading-relaxed">
-          Today, NA members hold nearly 67,000 meetings weekly in 139 countries. We offer recovery from the effects of addiction through working a twelve-step program, including regular attendance at group meetings. The group atmosphere provides help from peers and offers an ongoing support network for addicts who wish to pursue and maintain a drug-free lifestyle.
+          Today, NA members hold nearly 67,000 meetings weekly in 139 countries. We offer recovery from the effects of addiction through working a twelve-step program, including regular attendance at group meetings. The group atmosphere provides help from peers and offers an ongoing support network for addicts who wish to pursue and maintain a drug-free lifestyle. Anyone may join us, regardless of age, race, sexual identity, creed, religion or lack of religion, to find drug addiction help. We are not interested in what or how much you used... but only in what you want to do about your problem of addiction and how our sobriety support group can help.
         </p>
       </section>
 
       <section className="mb-8">
-        <h2 className="text-3xl font-semibold text-sky-800 mb-4">Our Message</h2>
+        <h2 className="text-3xl font-semibold text-sky-800 mb-4">Our Message of Hope in Recovery</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          The message of Narcotics Anonymous is simple: An addict, any addict, can stop using drugs, lose the desire to use, and find a new way to live. Our message is one of hope and the promise of freedom from active addiction.
+          The message of Narcotics Anonymous is simple: An addict, any addict, can stop using drugs, lose the desire to use, and find a new way to live free from active addiction. Our message is one of hope and the promise of freedom from active addiction through the NA recovery program.
         </p>
         <button
           onClick={() => setCurrentPage('whatIsNA')}
           className="bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
         >
-          Learn More About NA
+          Learn More About NA Drug Addiction Help
         </button>
       </section>
 
       <section>
-        <h2 className="text-3xl font-semibold text-sky-800 mb-6">Explore the 12 Steps</h2>
+        <h2 className="text-3xl font-semibold text-sky-800 mb-6">Explore the 12 Steps of NA</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {stepsData.slice(0, 6).map(step => (
-            <div key={step.id} className="bg-sky-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div key={step.id} className="bg-sky-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sky-200">
               <h3 className="text-xl font-semibold text-sky-700 mb-2">{step.title}</h3>
-              <p className="text-gray-600 text-sm mb-3 line-clamp-3">{step.text}</p>
+              <p className="text-gray-600 text-sm mb-3 line-clamp-3 leading-relaxed">{step.text}</p>
               <button
                 onClick={() => setCurrentPage(`step/${step.id}`)}
-                className="text-sky-600 hover:text-sky-800 font-medium transition duration-300"
+                className="inline-block bg-sky-200 text-sky-700 px-4 py-2 rounded-md hover:bg-sky-300 hover:text-sky-800 text-sm font-medium transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-1"
               >
                 Read More &rarr;
               </button>
@@ -1536,54 +1569,43 @@ const HomePage = ({ setCurrentPage }) => (
         <div className="text-center mt-8">
           <button
             onClick={() => setCurrentPage('step/1')}
-            className="bg-green-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            className="bg-sky-700 text-white font-semibold py-3 px-8 rounded-lg hover:bg-sky-800 transition-colors duration-150 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
           >
-            View All 12 Steps
+            View All Twelve Steps for Staying Clean
           </button>
         </div>
       </section>
     </div>
-    <footer className="text-center py-8 mt-12 text-gray-500">
-      <div class="mt-8 mb-6">
-        <h3 class="text-xl font-semibold text-sky-800 mb-3">Literature</h3>
-        <ul class="list-disc list-inside space-y-2 text-gray-600">
-          <li><a href="assets/basic-text-sixth-edition.pdf" target="_blank" class="hover:text-sky-700 hover:underline">Basic Text of Narcotics Anonymous (Sixth Edition)</a></li>
-          <li><a href="assets/it-works-how-and-why.pdf" target="_blank" class="hover:text-sky-700 hover:underline">It Works How and Why: The Twelve Steps and Twelve Traditions of Narcotics Anonymous</a></li>
-          <li><a href="assets/step-working-guide.pdf" target="_blank" class="hover:text-sky-700 hover:underline">The NA Step Working Guides</a></li>
-        </ul>
-      </div>
-      <p>&copy; {new Date().getFullYear()} NA Information Website. Content adapted from NA Fellowship-approved literature.</p>
-      <p>Narcotics Anonymous, NA, and the NA Way are registered trademarks of Narcotics Anonymous World Services, Inc.</p>
-    </footer>
-  </div>
+    {/* Footer removed from here, will be in App component */}
+  </article>
 );
 
 const StepPage = ({ stepId }) => {
   const step = stepsData.find(s => s.id === parseInt(stepId));
 
   if (!step) {
-    return <div className="p-6 text-center text-red-500">Step not found.</div>;
+    return <div className="p-6 text-center text-red-500">Step not found.</div>; // Or a more structured error page
   }
 
   return (
-    <div className="animate-fadeIn p-6 md:p-10 bg-sky-50 min-h-[calc(100vh-5rem)]"> {/* Changed background to sky-50 for StepPage */}
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-xl"> {/* Increased max-width for better layout of cards */}
-        <header className="mb-8 border-b pb-4 border-sky-200">
+    <article className="animate-fadeIn p-6 md:p-10 bg-sky-50 min-h-[calc(100vh-5rem)]">
+      <div className="max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-xl"> {/* Adjusted padding */}
+        <header className="mb-6 border-b pb-4 border-sky-200"> {/* Adjusted margin */}
           <h1 className="text-4xl font-bold text-sky-700 mb-2">{step.title}</h1>
         </header>
-        <p className="text-lg italic text-gray-700 mb-6 leading-relaxed p-4 bg-sky-100 rounded-md border-l-4 border-sky-500">{step.text}</p>
+        <p className="text-lg italic text-gray-700 mb-6 leading-relaxed p-6 bg-sky-100 rounded-md border-l-[6px] border-sky-500">{step.text}</p> {/* Adjusted padding and border */}
         
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-sky-800 mb-3">Understanding the Step</h2>
+          <h2 className="text-2xl font-semibold text-sky-800 mb-4">Understanding This Narcotics Anonymous Step</h2> {/* Adjusted margin */}
           <p className="text-gray-700 leading-relaxed">{step.summary}</p>
         </section>
 
         <section className="mt-8 pt-6 border-t border-sky-200">
-          <h2 className="text-2xl font-semibold text-sky-800 mb-4">In-Depth Exploration</h2>
+          <h2 className="text-2xl font-semibold text-sky-800 mb-4">In-Depth Exploration of This NA Step</h2>
           <div className="step-html-content" dangerouslySetInnerHTML={{ __html: step.userContentPlaceholder }} />
         </section>
       </div>
-    </div>
+    </article>
   );
 };
 
@@ -1591,18 +1613,18 @@ const GeneralPage = ({ pageKey }) => {
   const pageData = generalPagesData[pageKey];
 
   if (!pageData) {
-    return <div className="p-6 text-center text-red-500">Page not found.</div>;
+    return <div className="p-6 text-center text-red-500">Page not found.</div>; // Or a more structured error page
   }
 
   return (
-    <div className="animate-fadeIn p-6 md:p-10 bg-sky-50 min-h-[calc(100vh-5rem)]"> {/* Changed background to sky-50 */}
-      <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-xl">
-        <header className="mb-8 border-b pb-4 border-sky-200">
+    <article className="animate-fadeIn p-6 md:p-10 bg-sky-50 min-h-[calc(100vh-5rem)]">
+      <div className="max-w-3xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-xl"> {/* Adjusted padding */}
+        <header className="mb-6 border-b pb-4 border-sky-200"> {/* Adjusted margin */}
           <h1 className="text-4xl font-bold text-sky-700">{pageData.title}</h1>
         </header>
-        <div className="prose max-w-none text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: pageData.content }}></div>
+        <section className="prose max-w-none text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: pageData.content }}></section>
       </div>
-    </div>
+    </article>
   );
 };
 
@@ -1657,16 +1679,28 @@ const App = () => {
         pageContent = <GeneralPage pageKey="recoveryRelapse" />;
         break;
       default:
-        pageContent = <HomePage setCurrentPage={setPageAndUpdateHash} />;
+        pageContent = <HomePage setCurrentPage={setPageAndUpdateHash} />; // Fallback to HomePage
     }
   }
 
   return (
-    <div className="font-sans bg-gray-100">
+    <div className="font-sans bg-gray-100 flex flex-col min-h-screen">
       <Navbar setCurrentPage={setPageAndUpdateHash} isMobileMenuOpen={isMobileMenuOpen} toggleMobileMenu={toggleMobileMenu} />
-      <main>
+      <main className="flex-grow">
         {pageContent}
       </main>
+      <footer className="bg-sky-800 text-white text-center py-8 mt-auto border-t-2 border-sky-700"> {/* Changed text-sky-100 to text-white */}
+        <div className="max-w-4xl mx-auto px-4">
+            <h3 className="text-xl font-semibold text-white mb-4">NA Literature Resources</h3>
+            <ul className="list-none space-y-2 mb-6">
+              <li><a href="assets/basic-text-sixth-edition.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-300 hover:text-sky-200 hover:underline focus:outline-none focus:ring-1 focus:ring-sky-200 rounded">Basic Text of Narcotics Anonymous (Sixth Edition)</a></li>
+              <li><a href="assets/it-works-how-and-why.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-300 hover:text-sky-200 hover:underline focus:outline-none focus:ring-1 focus:ring-sky-200 rounded">It Works How and Why: The Twelve Steps and Twelve Traditions of Narcotics Anonymous</a></li>
+              <li><a href="assets/step-working-guide.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-300 hover:text-sky-200 hover:underline focus:outline-none focus:ring-1 focus:ring-sky-200 rounded">The NA Step Working Guides</a></li>
+            </ul>
+            <p className="text-sm">&copy; {new Date().getFullYear()} Narcotics Anonymous Recovery Resources. Content adapted from NA Fellowship-approved literature.</p>
+            <p className="text-xs mt-1 text-sky-300">Narcotics Anonymous, NA, the NA Way, and the NA Symbol are registered trademarks of Narcotics Anonymous World Services, Inc. This website is not affiliated with or endorsed by NAWS, Inc.</p>
+        </div>
+      </footer>
     </div>
   );
 };
